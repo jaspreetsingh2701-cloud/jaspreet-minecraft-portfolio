@@ -19,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${body.variable}`}>{children}</body>
-      <Analytics />
+      <body className={`${display.variable} ${body.variable}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
